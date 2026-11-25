@@ -3,7 +3,8 @@
 Infrastructure Azure du projet **Kaaru** (QR codes dynamiques), en Terraform.
 
 Le rapport complet est dans [`docs/rapport.md`](docs/rapport.md), l'architecture
-détaillée dans [`docs/architecture.md`](docs/architecture.md).
+détaillée dans [`docs/architecture.md`](docs/architecture.md), la procédure
+d'astreinte dans [`docs/exploitation.md`](docs/exploitation.md).
 
 ## Ce que crée ce depot
 
