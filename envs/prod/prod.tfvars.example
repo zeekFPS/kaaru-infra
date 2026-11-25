@@ -1,0 +1,18 @@
+environment         = "prod"
+owner               = "Paul-Victor Delerue"
+location            = "francecentral"
+resource_group_name = "rg-kaaru-prod"
+
+# Suffixe unique : le nom du Key Vault est global sur Azure.
+unique_suffix = "pvd2026"
+
+alert_email        = "prenom.nom@example.com"
+monthly_budget_eur = 15
+log_retention_days = 30
+
+# Remplacer par l'image poussee dans l'ACR apres le premier apply :
+#   az acr build --registry <acr> --image kaaru-api:<sha> .
+container_image = "mcr.microsoft.com/azuredocs/containerapps-helloworld:latest"
+
+api_min_replicas = 0
+api_max_replicas = 3

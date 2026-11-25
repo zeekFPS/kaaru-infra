@@ -1,0 +1,8 @@
+# Copier en backend.hcl puis : terraform init -backend-config=backend.hcl
+# Le compte de stockage d'etat doit exister AVANT le premier init.
+resource_group_name  = "rg-kaaru-tfstate"
+storage_account_name = "stkaaruTFstateXXXX"
+container_name       = "tfstate"
+key                  = "prod.terraform.tfstate"
+
+# use_azuread_auth = true  # recommande : pas de cle d'acces dans le fichier
