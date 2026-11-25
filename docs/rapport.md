@@ -47,6 +47,24 @@ dans une file. L'agrégation des statistiques est le travail d'un job séparé.
 pas de mot de passe de registre, pas de chaîne de connexion. Deux identités
 managées portent des droits différents, appliqués par RBAC.
 
+### Captures de l'application
+
+![Éditeur avec aperçu en direct](captures/editeur.png)
+
+*L'éditeur. L'aperçu est rendu dans le navigateur, mais toute création repasse
+par le rendu serveur et son décodage de vérification.*
+
+![Résultat et statistiques](captures/resultat-et-stats.png)
+
+*Après création : lien court, export PNG et SVG, compteurs et changement de
+destination. Le QR imprimé reste valable puisque seule la cible change.*
+
+![Refus pour contraste insuffisant](captures/contraste-refuse.png)
+
+*Le garde-fou en action : un dégradé à 3.7:1 est refusé avant même l'appel
+serveur. Un joli QR qui ne se scanne pas est un QR inutile.*
+
+
 ### Options envisagées
 
 | Option | Verdict | Raison |
